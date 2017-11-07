@@ -9,7 +9,7 @@ app.engine('html', require('ejs').renderFile);
 app.use(session({
   secret: 'keyboard cat',
   cookie: {
-    maxAge: (60000*1000),
+    maxAge: (3600*10000000000),
     secure: false
   },
   resave: false,
